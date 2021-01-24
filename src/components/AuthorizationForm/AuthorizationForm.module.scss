@@ -1,0 +1,46 @@
+.authorizationForm {
+    .email {
+        position: relative;
+    }
+    .password {
+        position: relative;
+        .passwordField {
+            padding: 0px 200px 0px 20px;
+            width: 100%;
+        }
+        .forgotPassword {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            margin-top: 7px;
+            max-width: 100%;
+            max-height: 100%;
+            color: #75777a;
+            font-size: 14px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+                color: #333333;
+                transition: 0.3s;
+            }
+        }
+    }
+    .field {
+        width: 100%;
+    }
+    .btnSignIn {
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    @media (max-width: 768px) {
+        .password {
+            .passwordField {
+                padding: 0px 175px 0px 20px;
+            }
+            .forgotPassword {
+                font-size: 12px;
+                margin-top: 9px;
+            }
+        }
+    }
+}

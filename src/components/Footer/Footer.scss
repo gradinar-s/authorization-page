@@ -1,0 +1,9 @@
+.footer li {
+    margin: 0px 25px 0px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        color: #333333;
+        transition: 0.3s;
+    }
+}

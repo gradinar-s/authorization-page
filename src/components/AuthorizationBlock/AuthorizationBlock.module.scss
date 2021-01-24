@@ -1,0 +1,78 @@
+.authorizationWrapper {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 0px 0px 82px;
+    .logo {
+        display: block;
+        margin: 31px 0px 0px 0px;
+    }
+    .title {
+        margin: 112px 0px 0px 0px;
+    }
+    .description {
+        font-weight: 600;
+        margin: 12px 0px 64px 0px;
+        .singUpNow {
+            color: #065bea;
+            margin: 0px 0px 0px 5px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+                color: #0a4ab6;
+                transition: 0.3s;
+            }
+        }
+    }
+    .footerWrapper {
+        display: flex;
+        color: #75777a;
+        margin-top: auto;
+        padding: 0px 0px 30px 0px;
+        margin: 222px 0px 0px 0px;
+    }
+    @media (max-width: 1200px) {
+        margin: 0px auto;
+        padding: 0px 0px 0px 20px;
+        .description {
+            .singUpNow {
+                display: block;
+                margin: 5px 0px 0px 0px;
+            }
+        }
+    }
+    @media (max-width: 920px) {
+        .logo {
+            margin: 15px 0px 0px 0px;
+        }
+        .title {
+            margin: 80px 0px 0px 0px;
+        }
+        .description {
+            margin: 12px 0px 40px 0px;
+        }
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        .logo {
+            display: none;
+        }
+        .title {
+            margin: 50px 0px 0px 0px;
+        }
+        .description {
+            margin: 12px 0px 20px 0px;
+            text-align: center;
+            .singUpNow {
+                display: block;
+            }
+        }
+        .footerWrapper {
+            padding: 0px 0px 0px 0px;
+            margin: 60px 0px 0px 0px;
+        }
+    }
+}
